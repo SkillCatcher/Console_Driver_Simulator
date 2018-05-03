@@ -1,6 +1,6 @@
 package driver.simulator.machines;
 
-public class Machine {
+public class Vehicle {
 
     private String name;
     private double currentSpeed;
@@ -33,7 +33,7 @@ public class Machine {
         return breaksForce;
     }
 
-    public Machine(String name, double maxSpeed, double maxAcceleration, double breaksForce) {
+    public Vehicle(String name, double maxSpeed, double maxAcceleration, double breaksForce) {
         this.name = name;
         this.maxSpeed = maxSpeed;
         this.maxAcceleration = maxAcceleration;
