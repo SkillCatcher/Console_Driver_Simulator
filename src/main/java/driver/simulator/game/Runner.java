@@ -21,11 +21,11 @@ public class Runner {
         String name = skan.next();
 
         Vehicle player = new Vehicle(name, 100, 40, 40);
-        Track currentTrack = new Track(1000, 1);
+        Track currentTrack = new Track(1000, 0);
         currentTrack.setObstacles();
 
         GameBehaviour game = new GameBehaviour(currentTrack);
-        game.display(player);
+        game.display(player, currentTrack);
 
 
     }

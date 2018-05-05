@@ -56,10 +56,17 @@ public class Vehicle {
         speedUp(accelerate);
         if(currentSpeed + acceleration > maxSpeed) {
             currentSpeed = maxSpeed;
+            System.out.println("You've reached your maximum speed");
         } else if(currentSpeed + acceleration < 0) {
             currentSpeed = 0;
+            System.out.println("You're not moving...");
         } else {
             currentSpeed += acceleration;
         }
+    }
+
+    public boolean dodge() {
+        return true;
+
     }
 }
