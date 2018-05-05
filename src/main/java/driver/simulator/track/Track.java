@@ -21,12 +21,13 @@ public class Track {
     public Track(double length, int numberOfObstacles) {
         this.length = length;
         this.numberOfObstacles = numberOfObstacles;
+        this.obstacles = new Obstacle[numberOfObstacles];
     }
 
     public void setObstacles() {
         Obstacle[] obstacles = new Obstacle[numberOfObstacles];
         for (int i = 0; i < obstacles.length; i++) {
-            obstacles[i] = new Obstacle(Math.random()*length);
+            obstacles[i] = new Obstacle(Math.round(Math.random()*length));
         }
 
         this.obstacles = obstacles;
