@@ -8,14 +8,12 @@ import java.util.Scanner;
 public class Runner {
     public static void main(String[] args) {
 
-        System.out.println("Welcome to the BlackCarJack");
-        System.out.println(" ");
-        System.out.println("Dodge the obstacles on the track at closest distance and highest speed possible," +
-                " but remember - you don't get points for crashing, even in style ;)");
-
-        System.out.println(" ");
-        System.out.println("Are you ready?");
-        System.out.println("[IF YOU ARE, WRITE YOUR NAME IN THE CONSOLE, THEN PRESS ENTER]");
+        System.out.println("Welcome to the BlackCarJack" + "\n" +
+                " " + "\n" +
+                "Dodge the obstacles on the track at closest distance and highest speed possible," +
+                " but remember - you don't get points for crashing, even in style ;)" + "\n" +
+                " " + "\n" +
+                "Are you ready?" + "\n" + "[IF YOU ARE, WRITE YOUR NAME IN THE CONSOLE, THEN PRESS ENTER]" + "\n");
 
         Scanner skan = new Scanner(System.in);
         String name = skan.next();
